@@ -7,7 +7,7 @@
  * Versão: 1.0
  *********************************************************************/
 console.log('----------Par e Impar com Array----------');
-const {pares} = require('./funcoes')
+const {pares, impares} = require('./funcoes')
 var readline = require('readline')
 var entradaDados = readline.createInterface({
     input: process.stdin,
@@ -15,9 +15,10 @@ var entradaDados = readline.createInterface({
 })
 //ENTRADA DE DADOS
 entradaDados.question('Digite o primeiro número: ', function (numero1) {
-    let numero1 = parseFloat(numero1)
+    let numero1 = parseFloat(valor1)
     entradaDados.question('Digite o segundo número', function (numero2){
-        let numero2 = parseFloat(numero2)
+        let numero2 = parseFloat(valor2)
     })
 })
 console.log(pares(numero1, numero2))
+console.log(impares(numero1, numero2))
